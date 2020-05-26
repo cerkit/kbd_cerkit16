@@ -557,10 +557,10 @@ Wire Wire Line
 Wire Wire Line
 	6550 1150 6400 1150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 5ED4B4E1
 P 6900 1100
-F 0 "#PWR?" H 6900 850 50  0001 C CNN
+F 0 "#PWR01" H 6900 850 50  0001 C CNN
 F 1 "GND" H 6905 927 50  0000 C CNN
 F 2 "" H 6900 1100 50  0001 C CNN
 F 3 "" H 6900 1100 50  0001 C CNN
@@ -572,10 +572,10 @@ Wire Wire Line
 Wire Wire Line
 	6400 1050 6900 1050
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 5ED4EA4A
 P 4750 1300
-F 0 "#PWR?" H 4750 1050 50  0001 C CNN
+F 0 "#PWR02" H 4750 1050 50  0001 C CNN
 F 1 "GND" H 4755 1127 50  0000 C CNN
 F 2 "" H 4750 1300 50  0001 C CNN
 F 3 "" H 4750 1300 50  0001 C CNN
@@ -591,4 +591,32 @@ Wire Wire Line
 Wire Wire Line
 	4750 1150 4750 1250
 Connection ~ 4750 1250
+Wire Wire Line
+	4550 1250 4750 1250
+Text GLabel 3850 1500 0    50   Input ~ 0
+RST
+$Comp
+L Connector:TestPoint_Small RST2
+U 1 1 5ED6491C
+P 4000 1500
+F 0 "RST2" H 4048 1500 50  0000 L CNN
+F 1 "TestPoint_Small" H 4048 1455 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4200 1500 50  0001 C CNN
+F 3 "~" H 4200 1500 50  0001 C CNN
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Small RST1
+U 1 1 5ED5480B
+P 4550 1250
+F 0 "RST1" H 4500 1350 50  0000 L CNN
+F 1 "TestPoint_Small" H 4050 1150 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4750 1250 50  0001 C CNN
+F 3 "~" H 4750 1250 50  0001 C CNN
+	1    4550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1500 3850 1500
 $EndSCHEMATC
