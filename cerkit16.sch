@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L promicro:ProMicro U1
-U 1 1 5ECD55E7
-P 5700 1700
-F 0 "U1" H 5700 2737 60  0000 C CNN
-F 1 "ProMicro" H 5700 2631 60  0000 C CNN
-F 2 "promicro:ProMicro" H 5800 650 60  0001 C CNN
-F 3 "" H 5800 650 60  0000 C CNN
-	1    5700 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L MX_Alps_Hybrid:MX-NoLED MX1
 U 1 1 5ECD732A
 P 4450 3250
@@ -503,38 +492,22 @@ Connection ~ 5100 5200
 Wire Wire Line
 	4400 5200 5100 5200
 Connection ~ 4400 5200
-Text GLabel 6550 1750 2    50   Input ~ 0
+Text GLabel 5000 1750 0    50   Input ~ 0
 COL0
-Text GLabel 6550 1850 2    50   Input ~ 0
+Text GLabel 5000 1850 0    50   Input ~ 0
 COL1
-Text GLabel 6550 1950 2    50   Input ~ 0
+Text GLabel 5000 1950 0    50   Input ~ 0
 COL2
-Text GLabel 6550 2050 2    50   Input ~ 0
+Text GLabel 5000 2050 0    50   Input ~ 0
 COL3
-Text GLabel 4850 1750 0    50   Input ~ 0
+Text GLabel 5000 1350 0    50   Input ~ 0
 ROW0
-Text GLabel 4850 1850 0    50   Input ~ 0
+Text GLabel 5000 1450 0    50   Input ~ 0
 ROW1
-Text GLabel 4850 1950 0    50   Input ~ 0
+Text GLabel 5000 1550 0    50   Input ~ 0
 ROW2
-Text GLabel 4850 2050 0    50   Input ~ 0
+Text GLabel 5000 1650 0    50   Input ~ 0
 ROW3
-Wire Wire Line
-	6550 1750 6400 1750
-Wire Wire Line
-	6550 1850 6400 1850
-Wire Wire Line
-	6550 1950 6400 1950
-Wire Wire Line
-	6550 2050 6400 2050
-Wire Wire Line
-	4850 2050 5000 2050
-Wire Wire Line
-	4850 1950 5000 1950
-Wire Wire Line
-	4850 1850 5000 1850
-Wire Wire Line
-	4850 1750 5000 1750
 Wire Wire Line
 	5800 5950 6500 5950
 Connection ~ 5800 5950
@@ -574,25 +547,25 @@ Wire Wire Line
 $Comp
 L power:GND #PWR02
 U 1 1 5ED4EA4A
-P 4750 1300
-F 0 "#PWR02" H 4750 1050 50  0001 C CNN
-F 1 "GND" H 4755 1127 50  0000 C CNN
-F 2 "" H 4750 1300 50  0001 C CNN
-F 3 "" H 4750 1300 50  0001 C CNN
-	1    4750 1300
+P 4350 1350
+F 0 "#PWR02" H 4350 1100 50  0001 C CNN
+F 1 "GND" H 4355 1177 50  0000 C CNN
+F 2 "" H 4350 1350 50  0001 C CNN
+F 3 "" H 4350 1350 50  0001 C CNN
+	1    4350 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 1250 4750 1250
+	5000 1250 4350 1250
 Wire Wire Line
-	4750 1250 4750 1300
+	4350 1250 4350 1350
 Wire Wire Line
-	5000 1150 4750 1150
+	5000 1150 4350 1150
 Wire Wire Line
-	4750 1150 4750 1250
-Connection ~ 4750 1250
+	4350 1150 4350 1250
+Connection ~ 4350 1250
 Wire Wire Line
-	4550 1250 4750 1250
+	4150 1250 4350 1250
 Text GLabel 3850 1500 0    50   Input ~ 0
 RST
 $Comp
@@ -609,14 +582,25 @@ $EndComp
 $Comp
 L Connector:TestPoint_Small RST1
 U 1 1 5ED5480B
-P 4550 1250
-F 0 "RST1" H 4500 1350 50  0000 L CNN
-F 1 "TestPoint_Small" H 4050 1150 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4750 1250 50  0001 C CNN
-F 3 "~" H 4750 1250 50  0001 C CNN
-	1    4550 1250
+P 4150 1250
+F 0 "RST1" H 4100 1350 50  0000 L CNN
+F 1 "TestPoint_Small" H 3650 1150 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4350 1250 50  0001 C CNN
+F 3 "~" H 4350 1250 50  0001 C CNN
+	1    4150 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4000 1500 3850 1500
+$Comp
+L promicro:ProMicro U1
+U 1 1 5ECD55E7
+P 5700 1700
+F 0 "U1" H 5700 2737 60  0000 C CNN
+F 1 "ProMicro" H 5700 2631 60  0000 C CNN
+F 2 "promicro:ProMicro" H 5800 650 60  0001 C CNN
+F 3 "" H 5800 650 60  0000 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
